@@ -1,0 +1,2074 @@
+/* ---  SETEO GENERAL ---- */
+
+* {box-sizing: border-box;}
+a {text-decoration: none;color:black;}
+ul {padding:0px;margin:0;}
+ul>li {list-style: none;}
+li {
+    list-style: none;
+    display:flex;
+    flex-direction: column;
+    text-align:center;
+    justify-content: center;
+    margin: 5px;
+}
+body {
+    width: 100%;
+    margin: 0;
+    font-family: 'M PLUS Rounded 1c', sans-serif;    
+}
+main {
+    background:#F9F9F9;
+}
+input::placeholder {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 14px;
+    text-align: center;
+}
+.links {
+    /* color: grey; */
+    padding: 0 5px;
+    /* font-size: 16px; */
+    text-decoration: none;  
+    text-transform: uppercase;
+    color:black;
+    font-size:0.7em; 
+}
+.botonGral {
+    border: solid lightgrey 0.5px;
+    padding:10px;
+    color:black;
+    background-color:white;
+    text-transform: uppercase;
+}
+.botonFilter{    
+    height:25px;
+    text-transform:uppercase; 
+    background-color:black;
+    color:white;   
+    border:none;
+    border-radius:10%;
+    border-bottom:solid grey 1px;
+}
+.botonFilter:hover{
+    background-color:yellow;
+    color:black;
+}
+.botonNuevo{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    font-size:12px;
+    padding-left:5px;
+    padding-right: 5px;
+    background-color:white;
+    border:none;
+    height:25px;
+    text-transform:uppercase;
+    border-radius:10%;
+    border-bottom:solid grey 1px;
+}
+.botonCrear{
+    height:25px;
+    background-color:red;
+    color:white;
+    padding:0px 5px;
+    border-bottom:solid grey 1px;
+    border-radius:10%;
+}
+.index {
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+.indColumn{
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    align-items: center;
+}
+.principal{
+    display:flex;
+    flex-direction:column;
+    padding-bottom:40px;
+    padding-top:10px;
+}
+.space{
+    padding-bottom:50px;
+}
+.margin10{
+    margin-top:10px;
+    margin-bottom:10px;
+}
+.filtro{
+    text-transform: uppercase;
+    height:25px;
+    background-color:white;
+    border:none;
+    border-bottom:dotted black 1px;
+}
+.white{
+    background-color:white;
+} 
+
+/* --- HEADER --- */
+.main-header {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.nav-logo-icon {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+.cajalogo {
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left:10px;
+}
+.logo {
+    width: 60%;
+    max-width: 150px;
+}
+.nav-iconos {
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    text-transform: uppercase;
+    padding-right:10px;
+    font-size:0.7em;
+}
+.nav-iconos>ul {
+    padding: 0px;
+    display: flex;
+    align-items: flex-end;
+}
+.nav-iconos>ul>li {
+    flex-direction: row;
+    list-style-type: none;
+    padding: 0px 5px 0px 5px;
+}
+.nav-iconos img {
+    width: 5vw;
+    max-width: 30px;
+}
+
+/* ---- BARRA MENU ----- */
+.nav-menu{
+    margin:0;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* background-color:black; */
+    opacity: 0.8;
+    background-color:white;
+}
+.nav-menu li a{
+    /* color:white;  */
+    color:grey; 
+    font-size:0.8em;
+    text-transform:upperlowercase;
+}
+.nav-menu li a:hover{
+    text-transform:uppercase;
+    color:black;
+    /* color:black; */
+}
+
+/* ----- WELCOME ---- */
+.banner {
+    height: 250px;
+    background-image: url("../image/banner_welcome.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+.IntroText {
+    text-align: center;
+    margin: 30px 20px;
+}
+.IntroText article p {
+    color: #a0a0a0;
+    font-size:1.2em;
+}
+.lineatxt {
+    border-bottom: solid black 0.8px ;
+    width: 150px;
+    margin: 0 auto;
+}
+.BannerInfo {
+    margin: 5px;
+}
+.BannerInfo>h1 {
+    width: 47vw;
+    color: grey;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    margin: 0 0 20px 0;
+}
+.BannerInfo>a {
+    padding: 8px 15px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+}
+.BannerInfo>a:hover {
+    background-color: red;
+}
+.SeccionIntro span {
+    display: none;
+}
+.SeccionIntro>h2 {
+    font-size: 2em;
+    font-family: 'Lucida', serif;
+    text-transform: uppercase;
+}
+.SeccionIntroWel {
+    margin: 30px 0;
+    text-align: center;
+}
+.SeccionIntroWel h2 {
+    font-size: 2em;
+    font-family: 'Lucida', serif;
+    margin: 0;
+    text-transform: uppercase;
+}
+.SeccionIntroWel>p {
+    margin: 0;
+    color: #a0a0a0;
+}
+.ContenidoWel {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #f7f7f7;
+    margin: 20px 0;
+}
+.ImgWel {
+    width: 100%;
+    text-align: center;
+    background-color: rgb(58, 58, 58);
+}
+.ImgWel img {
+    width: 100%;
+}
+.ImgWel a {
+    color: white;
+    padding: 25px 50px;
+    display: inline-block;
+    font-size: 1.2em;
+}
+.ProductosWel {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: calc(50% - 15px);
+    margin-left: 15px;
+}
+.ProducW {
+    width: 56%;
+}
+.ProducW img {
+    width: 100%;
+}
+.ProducW h3 {
+    margin: 0;
+}
+.ProducW p {
+    margin: 0;
+}
+.BannerProduct {
+    height: 250px;
+    background-image: url("../image/bannerProduct.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+.bannerOpacity {
+    background-color: rgba(33, 33, 33, 0.3);
+    width: 100%;
+    z-index: 10;
+    height: 250px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.TextBP {
+    z-index: 20;
+    text-align: center;
+}
+.TextBP h2 {
+    font-size: 1.7em;
+    color: white;
+    margin-bottom: 40px;
+}
+.TextBP a {
+    color: white;
+    background-color: rgb(58, 58, 58);
+    padding: 15px 30px;
+    display: inline-block;
+    font-weight: bold;
+}
+.botonIng>a {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: black;
+    color: white;
+}
+.botonIng>a:hover {
+    background-color: red;
+}
+/*  MARCAS  */
+.Marcas {
+    margin: 50px auto;
+    width: 100%;
+    text-align: center;
+}
+.LogosMarcas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+.LogosMarcas img {
+    padding: 20px 23px;
+    width: 80%;
+}
+/*  MODO PAGO */
+.ModoPago {
+    background-color: #f9f9f9;
+}
+.ContCompra {
+    padding: 50px 20px;
+    margin: 0 auto;
+    width: 100%;
+}
+.IconCompra {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid black;
+    padding-bottom: 15px
+}
+.IconCompra div {
+    width: 50px;
+}
+.InfoCompra i {
+    color: rgb(70, 69, 69);
+}
+.IconCompra:nth-child(2) {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.InfoPago {
+    padding-left: 20px;
+    width: 73%;
+    margin-left: 30px;
+}
+.IconCompra h3 {
+    margin: 0;
+}
+.IconCompra p {
+    color: #a0a0a0;
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+}
+
+/*------- PERFIL DE USUARIO -------*/
+.BannerPerfil{
+    background-image: url("../image/banner_welcome.jpg");
+	background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 150px;
+	background-position: center;
+
+	display: flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+	justify-content: flex-end;
+	align-items: center;
+    color: white; 
+}
+.BannerPerfil p{
+    width:100vw;
+    min-height: 50px;
+    padding:2px;
+    background-color:rgba(255,255,255,0.8);
+    font-size: 1.1em;
+    color:red;
+    text-transform: uppercase;
+    text-align: center;
+    justify-content:center;
+}
+.secAb{
+    width:100vw;       
+}
+.detailAb{
+    font-size:0.8em;
+    color:black;
+    background-color:white;
+    margin:0px 1px 0px 1px;
+    display:flex;
+    flex-direction:column;
+    align-items: center;  
+} 
+.detailAbName{
+    font-size:0.8em;
+    color:white;
+    margin:2px 0px;
+    padding:5px 0px;
+    text-transform:uppercase;
+    background-color:grey;
+    border-bottom:solid white 0.5px;     
+}
+.botonAbPr{
+    width:100px;
+    font-size:0.8em;
+    background-color:yellow;
+    text-align: center;
+}
+.SecDetailPerfil {
+    display:flex; 
+    flex-direction:column; 
+    align-items: center; 
+    width: 100vw;
+    margin: 0px 0;
+}
+.SecDetailPerfil h2 {
+    font-size: 2em;
+    font-family: 'Lucida', serif;
+    margin: 0;
+    text-transform: uppercase;
+}
+.SecDetailPerfil>p {
+    margin: 0;
+    color: #a0a0a0;
+}
+.secPerfil{
+    padding-top:20px;
+    padding-bottom:20px;
+}
+.secForma{
+    background-color:white;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+.formaSelect{
+    display:flex;
+    flex-direction:column;
+}
+.secFormaOption{
+    display:flex; 
+    flex-direction:column; 
+    align-items: center; 
+    width: 100vw;
+    margin: 0px 0;
+}
+.secFormaOption h2 {
+    font-size: 2em;
+    font-family: 'Lucida', serif;
+    margin: 5px; 
+    text-transform: uppercase;
+}
+.cajaForma{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: center;
+    font-size:0.8em;
+    margin-top:20px;
+    padding-top:10px;
+    max-width:650px;
+    border-top:solid lightgrey 2px;
+    box-shadow: 5px 5px 3px darkgrey;
+}
+.infoForma{
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin:0px;
+    padding:0px;
+    width:45%;
+    color:white;
+}
+.textCuerpo{
+    background-color:darkgray;
+    margin:0px;
+    padding:0px 10px;
+    height:50%;
+}
+.textCuerpo1{
+    background-color:red;
+    margin:0px;
+    padding:0px 10px;
+    height:50%;
+}
+.cajaImgCuerpo{
+    max-height:450px;
+    text-align: center;
+    /* border-bottom:solid rgb(58, 58, 58) 4px; */
+    padding:0px;
+    width:50%;
+    margin:0px;
+}
+.imgCuerpo{
+    width: 100%;
+    max-height:450px;
+}
+
+/* ---------- PERFIL SELLER ---------*/
+.producOn{
+    margin-left:40px;
+    background-color:white;    
+}
+.cantProd{
+    padding-right:10px;
+    padding-left:10px;
+}
+
+/* ----------- SHOP -----------*/
+.shopTx{
+    text-transform:uppercase;
+    font-size:1.3em;
+    background-color:white;
+    color:red;
+    opacity: 0.9;
+    width:100%;
+    min-height: 50px;
+    padding-left:10px;
+    padding-right: 10px;
+}
+.love{
+    align-self: flex-end;
+    padding-right:10px;
+}
+
+/*------- HOME ITEM -------*/
+.BannerItem{
+    background-image: url("../image/bannerseisuno.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction:column;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	align-items: center;
+    color: white;
+    height: 150px;
+}
+.BannerItem p{
+    display:flex;
+    flex-direction:column;
+    margin: 50px 0px;
+    width:100vw;
+    min-height: 50px;
+    padding:2px;
+    font-size: 1.2em;
+    background-color:rgba(35, 35, 35, 0.5);    
+    color:white;
+    /* background-color:yellow;    
+    color:black; */
+    text-transform: uppercase;
+    text-align: center;
+    justify-content:center;
+}
+/*------- LOOKS DE USUARIOS -------*/
+.BannerLooks{
+    background-image: url("../image/bannerseisuno.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+    background-position: center;
+    height: 150px;
+
+    display: flex;
+    flex-direction:column;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	align-items: center;
+    color: white;
+}
+.BannerLooks p{
+    display:flex;
+    flex-direction:column;
+    width:100vw;
+    min-height: 50px;
+    padding:2px;
+    background-color:rgba(35, 35, 35, 0.4);
+    font-size: 1.1em;
+    color:white;
+    text-transform: uppercase;
+    text-align: center;
+    justify-content:center;
+}
+
+/* ------- GUARDARROPA DE USUARIO ------- */
+.BannerWardrobe{
+    background-image: url("../image/bannerseisuno.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+    background-position: center;
+    height: 150px;
+
+	display: flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+	justify-content: flex-end;
+	align-items: center;
+    color: white;
+}
+.BannerWardrobe p{
+    display:flex;
+    flex-direction:column;
+    width:100vw;
+    min-height: 50px;
+    padding:2px;
+    background-color:rgba(35, 35, 35, 0.5);
+    font-size: 1.1em;
+    color:white;
+    text-transform: uppercase;
+    text-align: center;
+    justify-content:center;
+}
+
+/* ----- CAJA INDEX - ITEM - GUARDARROPA - PRODUCTOS ------ */
+.cajaIndex{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width:200px;
+    height:300px;
+    border:solid lightgrey 0.1px;
+    margin-bottom:10px;
+    background-color:white;
+}
+.cajaIndex:hover{
+    border-block-end-color: grey;
+    box-shadow: 5px 5px 3px lightgrey;
+}
+
+.cajaImgIndex{
+    min-height:250px;
+    padding: 0 5px;
+}
+.imgIndex{
+    max-width:100%;
+    max-height:250px;
+    margin-top:5px;
+}
+.optIndex{
+    height:30px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* --------------   MOSTRAR ITEMS / PRODUCTOS ------------------ */
+.itemShow {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    max-width: 100%;
+    max-height:340px;
+    margin-top:5px;   
+}
+.cajaItemShow{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    width:70vw;
+    max-width: 350px;
+    max-height: 400px;
+    min-height:250px;
+    background-color: white;
+    margin-bottom:10px;
+}
+.itemCat{
+    text-transform: uppercase;
+    margin:10px 25px 10px 25px;
+}
+.itemName{
+    margin:10px 25px 10px 25px;
+}
+.detalle {
+    width:70vw;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+.detalle ul {
+    padding: 0;
+    margin: 0;
+    border-radius: 5%;
+    text-align: center; 
+}
+.editItem{
+    height:35px;
+    display:flex;
+    flex-direction:row;
+    background-color:rgb(245, 245, 245);
+}
+.editItem label{
+    text-align: left;
+    color:grey;
+    width:120px;
+}
+.editItem select{
+    color:grey;
+    width:150px;
+    border:none;
+    border:dotted lightgrey 1px;
+}
+.editItem input{
+    color:grey;
+    width:150px;
+    background-color:rgb(248, 248, 248);
+    border:none;
+    border:dotted lightgrey 1px;
+}
+.detalleInfo{
+    display:flex;
+    flex-direction:row;
+    width:70vw;
+    /* width:100%; */
+    max-width:400px;
+    background-color:rgb(245, 245, 245);
+    border-bottom:dotted grey 1px;
+}
+.detName{
+    text-align: left;
+    color:grey;
+    margin-left: 10px;
+    width:120px;
+}
+.detValue{
+    margin:0px 20px;;
+    color:grey;
+}
+
+/* ------ ITEM PRODUCTO CREATE --------- */
+.imgInfo{
+    width:100%;
+}
+.inputCreate{
+    display:flex;
+    flex-direction: row;
+    width:70vw;
+    font-size:1em;
+    color:grey;
+    height: 40px;;
+    max-width:400px;
+    justify-content:center;
+    background-color:whitesmoke;        
+    border:none;
+    border-bottom:dotted grey 1px;
+    border-radius:none;
+}
+.info{
+    display:flex;
+    flex-direction: row;
+    width:70vw;
+    font-size:1em;
+    color:white;
+    max-width:400px;
+    justify-content:center;
+    margin:0px;
+    padding:5px;
+}
+.imgup{
+    width:100%;
+    margin-left:40vw;
+}
+.form{    
+    margin:0px;
+}
+.length{
+    margin:0px;
+}
+.refForm{
+    border-bottom:dotted grey 1px;
+    margin-left:5px;
+}
+.refLen{
+    margin-left:5px;
+}
+.formCreate{
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    align-items:center; 
+}
+.descrip{
+    font-size:0.8em;
+    color:grey;
+    padding-bottom:30px;
+}
+/* --------------  CAJA OUTFITS HORIZONTAL ------------------ */
+.cajaLookCompleto{
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content: space-between;
+    width:400px;
+    margin:10px;
+}
+.cajaOutfit2 {
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    align-items:flex-start;
+    justify-content: center;
+    border: solid lightgrey 0.5px;
+    border-radius: 1%;
+    width: 100vw;
+    max-width: 400px;
+    min-height: 380px;
+    padding:1%;
+    background-color:white;
+    border-block-end-color: grey;
+    box-shadow: 5px 5px 3px lightgrey;    
+ }
+ .column3{
+    display:flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    align-items: center;
+    width: 33%;
+    margin:0px;
+}
+.column4{
+    display:flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    align-items: center;
+    width: 33%;
+    margin:0px;
+}
+.column5{
+    display:flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    align-items: center;
+    width: 33%;
+    margin:0px;
+}
+.navUso{
+    display:flex;
+    flex-direction: row;
+    width: 100vw;
+    max-width: 400px;
+    flex-wrap:wrap;
+    align-items:flex-start;
+    justify-content: center;
+}
+.nav-foot{
+    display:flex;
+    flex-direction: row;
+    width: 100vw;
+    max-width: 400px;
+    justify-content: space-around;
+    text-transform: uppercase;
+    font-size:1.1em;
+    color:grey;
+}
+.cajaUso{
+    font-size:0.8em;
+    color:black;
+}
+.cajaOption{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    width:400px;
+    height:30px;
+    padding-bottom:30px;
+    margin-top:0px;
+    background-color:grey;
+    text-align:center;
+    border:solid lightgrey 1px;
+    border-top:none;
+}
+.cajaOption a{
+    border:none;
+    background-color:grey;
+    padding-top:3px;
+    color:whitesmoke;
+    font-size:1.1em;
+}
+.cajaOption a:hover{
+    text-transform:uppercase;
+}
+.mostrar{
+    display:none;
+}
+.nota{
+    height:10vh;
+    width:400px;
+    padding:5px 10px 5px 10px;
+    font-size:1.1em;
+    font-style:italic;
+    border:none;
+    background-color:white;
+    border-bottom:dotted lightgrey 1px;
+}
+.botonNota{
+    width:60px;
+    border:none;
+}
+.botonGuardarOut{
+    margin-left:50px;
+}
+
+/* --------   CAJAS DE ITEMS EN OUTFITS ------------ */
+.boxtop {
+    font-size:0.8em;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    width: 98%;
+    height: 180px;
+    /* height: 25vh; */
+    background-color: white;
+    margin-bottom:5px;
+    border-bottom:solid rgb(233, 228, 228) 1px;
+    border-right: solid rgb(233, 228, 228) 1px;
+    border-radius: 1%;
+}
+.boxbottom {
+    font-size:0.8em;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    width: 98%;
+    height: 300px;
+    /* height: 35vh; */
+    background-color: white;
+    margin-bottom:5px;
+    border-bottom:solid rgb(233, 228, 228) 1px;
+    border-right: solid rgb(233, 228, 228) 1px;
+    border-radius: 1%;
+}
+.boxoutwear {
+    font-size:0.8em;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    width: 98%;
+    height: 180px;
+    /* height: 25vh; */
+    background-color: white;
+    margin-bottom:5px;
+    border-bottom:solid rgb(233, 228, 228) 1px;
+    border-right: solid rgb(233, 228, 228) 1px;
+    border-radius: 5%;
+}
+.boxacc {
+    font-size:0.8em;
+    display:flex;
+    flex-direction:column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 98%;
+    height: 120px;
+    /* height: 18vh; */
+    background-color: white;
+    margin-top:10px;
+    margin-bottom:5px;
+    border-bottom:solid rgb(233, 228, 228) 1px;
+    border-right: solid rgb(233, 228, 228) 1px;
+    border-radius: 5%;
+}
+.boxshoes {
+    font-size:0.8em;
+    display:flex;
+    flex-direction:column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 98%;
+    height: 120px;
+    /* height: 18vh; */
+    background-color: white;
+    margin-top:10px;
+    margin-bottom:5px;
+    border-bottom:solid rgb(233, 228, 228) 1px;
+    border-right: solid rgb(233, 228, 228) 1px;
+    border-radius: 5%;
+}
+
+/* --------   IMAGENES DE ITEMS PARA OUTFITS ------------ */
+.alt {
+    display:flex;
+    flex-wrap: wrap;
+    font-size:8px;
+}
+.top {
+    width: 95%;
+    margin-top: 5px;
+    max-height: 170px;
+    /* max-height: 24vh; */
+}
+.ocultarTop{
+    display:flex;
+    flex-direction:column;
+    width: 98%;
+    height: 25vh;
+    background-color: pink;
+    margin-bottom:5px;
+    border-bottom:solid rgb(233, 228, 228) 1px;
+    border-right: solid rgb(233, 228, 228) 1px;
+    border-radius: 1%;
+}
+.bottom {
+    width: 90%;
+    /* width: 100%; */
+    margin-top: 5px;
+    max-height: 260px;
+}
+.outwear {
+    width: 100%;
+    margin-top: 5px;
+    max-height: 170px;
+    /* max-height: 24vh;     */
+}
+.bag {
+    align-items: flex-end;
+    width: 100%;
+    margin-top: 5px;
+    max-height: 110px;
+    /* max-height: 17vh; */
+}
+.shoes {
+    width: 100%;
+    margin-top: 5px;
+    max-height: 110px;
+    /* max-height: 17vh; */
+}
+.masterBag {
+    width: 100%;
+    margin-top: 5px;
+    max-height: 110px;
+    /* max-height: 17vh; */
+}
+.masterShoes {
+    width: 100%;
+    margin-top: 5px;
+    max-height: 110px;
+    /* max-height: 17vh; */
+}
+.other {
+    width: 100%;
+}
+.topFor {
+    width: 95%;
+    margin-top: 5px;
+    max-height: 170px;
+}
+.bottomFor {
+    width: 90%;
+    margin-top: 5px;
+    max-height: 260px;
+    /* max-height: 34vh; */
+}
+.outFor {
+    width: 100%;
+    margin-top: 5px;
+    max-height: 170px;
+    /* max-height: 24vh;     */
+}
+
+
+/*===================================================*/
+/*  -----------  1° MediaQuery  -------------   */
+/*====================================================*/
+@media (min-width: 540px) {
+}
+
+/*====================================================*/
+/*  ----------  Nuevo° MediaQuery  ------------   */
+/*==================================================*/
+@media (min-width: 680px) {
+/* --- SETEO --- */
+.principal{
+    padding-bottom:40px;
+    padding-top:10px;
+    max-width:90vw; /* NEW */
+    margin: 0 5vw; /* NEW */
+}
+
+/* --- HEADER --- */
+.logo {
+    /* width: 60%; */
+    width: 65%;
+    max-width: 170px;
+    /* max-width: 150px; */
+}
+.nav-iconos {
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    text-transform: uppercase;
+    padding-right:10px;
+    font-size:0.9em;
+    /* font-size:0.7em; */
+}
+
+/* ----- WELCOME ---- */
+
+.IntroText {   
+    margin:1vw 15vw;
+    /* text-align: center; */
+    /* margin: 30px 20px; */
+}
+.IntroText article {
+    display:flex; /* NEW */
+    flex-direction:column;/* NEW */
+    align-items: center;/* NEW */
+}
+.lineatxt {
+    border-bottom:solid black 1px;
+    /* border-bottom:solid black 0.5px; */
+    width: 30vw;
+    /* width: 150px; */
+    margin: 0 auto;
+}
+.BannerInfo {
+    margin: 5px;
+    margin-left:20px; /* NEW */
+}
+.secWel{/* NEW */
+    display:flex;
+    flex-direction:row;
+    margin:50px 0px; 
+    background-color:white;
+}
+.SeccionIntroWel {
+    display:flex; /* NEW */
+    flex-direction:column; /* NEW */
+    justify-content: center; /* NEW */
+    width: 50%; /* NEW */
+    margin: 0px 0;
+    /*margin: 30px 0; */
+    text-align: center;
+}
+.SeccionIntroWel h2 {
+    font-size: 1.2em;
+    /* font-size: 2em; */
+    font-family: 'Lucida', serif;
+    margin: 0;
+    text-transform: uppercase;
+}
+.SeccionIntroWel>p {
+    padding:10px; /* NEW */
+    margin: 0;
+    color: #a0a0a0;
+}
+.qPongoTex{ /* NEW */
+    order: 1;
+}
+.qPongoImg{ /* NEW */
+    order:2;
+}
+.ContenidoWel {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #f7f7f7;
+    width: 50%;
+    margin:0px;
+    /* margin: 20px 0; */
+}
+.botonIng>a {
+    display: inline-block;
+    font-size:0.8em; /* NEW */
+    padding: 5px;
+    /* padding: 10px 25px; */
+    background-color: black;
+    color: white;
+}
+
+/* ---- BARRA MENU ----- */
+.nav-menu{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 15vw; /* NEW */
+    justify-content: center;
+    /* justify-content: space-around; */
+    /* border-top:dotted black 1px; NEW */
+    background-color:white; /* NEW */
+    padding:5px;/* NEW */
+    /* background-color:black; */
+    /* opacity: 0.8; */
+    
+}
+.nav-menu li a{
+    margin: 0 10px;
+    color:black;/* NEW */ 
+    /* color:white;  */
+    /* color:grey;  */
+    font-size:1em;/* NEW */
+    /* font-size:0.8em; */
+    text-transform:upperlowercase;
+    
+}
+.nav-menu li a:hover{
+    text-transform:uppercase;
+    /* color:white; */
+   color:black;/* NEW */
+}
+
+/*------- HOME ITEM -------*/
+.BannerItem{
+    background-image: url("../image/bannerseisuno.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction:column;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	align-items: center;
+    color: white;
+    height: 200px; /* NEW */
+    /* height: 150px; */
+}
+.BannerItem p{
+    display:flex;
+    flex-direction:column;
+    margin: 0px 0px; /* NEW */
+    /* margin: 50px 0px; */
+    width:80vw; /* NEW */
+    /* width:100vw; */
+    min-height: 70px;
+    /* min-height: 50px; */
+    /* padding:2px; */
+    font-size: 1.4em;/* NEW */
+    /* font-size: 1.2em; */
+    background-color:rgba(35, 35, 35, 0.5);    
+    color:white;
+    /* background-color:yellow;    
+    color:black; */
+    text-transform: uppercase;
+    text-align: center;
+    justify-content:center;
+}
+
+/* ------ ITEM CREATE --------- */
+.cajaCreate{
+    width:45vw;
+}
+.imgInfo{
+    max-width:90%;
+    height:100%;
+}
+.imgInfoCont{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:center;
+    width:45vw;
+}
+.imgup{
+    width:45%;
+    margin-left:0vw;
+}
+.inputCreate{
+    display:flex;
+    flex-direction: row;
+    width:40vw;
+    font-size:1em;
+    color:grey;
+    height: 40px;;
+    justify-content:center;
+    background-color:whitesmoke;        
+    border:none;
+    border-bottom:dotted grey 1px;
+    border-radius:none;
+}
+.info{
+    width:40vw;   
+}
+.formCreate{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin:0px;
+    /* width:50vw; */
+}
+/* --------------   MOSTRAR ITEMS / PRODUCTOS ------------------ */
+.itemShow {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    max-width: 100%;
+    max-height:400px;
+    /* max-height:340px; */
+    margin-top:5px;   
+}
+.cajaItemShow{
+    width:40vw;
+    max-width: none;
+    /* max-width: 350px; */
+    max-height: 500px;
+    /* max-height: 400px; */
+    min-height:250px;
+    background-color: white;
+}
+.itemCat{
+    text-transform: uppercase;
+    margin:10px 25px 10px 25px;
+}
+.itemName{
+    margin:10px 25px 10px 25px;
+}
+.detalle {
+    width:35vw;
+    max-width: none;
+    /* max-width: 350px; */
+}
+.detalleInfo{
+    width:50vw;
+}
+.detalle ul {
+    padding: 0;
+    margin: 0;
+    border-radius: 5%;
+    text-align: center; 
+}
+.detalle ul li {
+    padding-top:5px;
+    /* border-bottom: 0.5px dotted grey; */
+}
+.editItem{
+    width:70vw;
+    max-width:400px;
+}
+/* ------- CAJA OUTFITS ------- */
+.alt {
+    font-size:10px;
+}
+/* ------- GUARDARROPA DE USUARIO ------- */
+.BannerWardrobe{
+    background-image: url("../image/bannerseisuno.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+    background-position: center;
+    height: 200px; /* NEW */
+    /* height: 150px; */
+
+	display: flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+	justify-content: flex-end;
+	align-items: center;
+    color: white;
+}
+.BannerWardrobe p{
+    display:flex;
+    flex-direction:column;
+    margin: 0px 0px; /* NEW */
+    width:80vw; /* NEW */
+    /* width:100vw; */
+    min-height: 70px;
+    /* min-height: 50px; */
+    /* padding:2px; */
+    background-color:rgba(35, 35, 35, 0.5);
+    font-size: 1.4em;/* NEW */
+    /* font-size: 1.1em; */
+    color:white;
+    text-transform: uppercase;
+    text-align: center;
+    justify-content:center;
+}
+/*------- LOOKS DE USUARIOS -------*/
+.BannerLooks{
+    background-image: url("../image/bannerseisuno.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+    background-position: center;
+    height: 200px; /* NEW */
+    /* height: 150px; */
+
+    display: flex;
+    flex-direction:column;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	align-items: center;
+    color: white;
+}
+.BannerLooks p{
+    display:flex;
+    flex-direction:column;
+    margin: 0px 0px; /* NEW */
+    width:80vw; /* NEW */
+    /* width:100vw;
+    min-height: 70px;
+    min-height: 50px;
+    padding:2px; */
+    background-color:rgba(35, 35, 35, 0.5);
+    font-size: 1.4em;/* NEW */
+    /* font-size: 1.1em; */
+    color:white;
+    text-transform: uppercase;
+    text-align: center;
+    justify-content:center;
+}
+
+/*------- PERFIL DE USUARIO -------*/
+.BannerPerfil{
+    background-image: url("../image/banner_welcome.jpg");
+	background-repeat: no-repeat;
+    background-size: cover;
+	background-position: center;
+    height: 200px; /* NEW */
+    /* height: 150px; */
+
+	display: flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+	justify-content: flex-end;
+	align-items: center;
+    color: white; 
+}
+.BannerPerfil p{
+    margin: 0px 0px; /* NEW */
+    width:80vw; /* NEW */
+    /* width:100vw;
+    min-height: 50px;
+    padding:2px;*/
+    background-color:rgba(255,255,255,0.8);
+    font-size: 1.4em;/* NEW */
+    /* font-size: 1.1em; */
+    color:red;
+    text-transform: uppercase;
+    text-align: center;
+    justify-content:center;
+}
+.SecDetailPerfil {
+    display:flex; 
+    flex-direction:column; 
+    align-items: center; 
+    width: 100vw;
+    margin: 0px 0;
+}
+.SecDetailPerfil h2 {
+    /* font-size: 1.2em; */
+    font-size: 2em;
+    font-family: 'Lucida', serif;
+    margin: 5px; /* NEW */
+    text-transform: uppercase;
+}
+.SecDetailPerfil>p {
+    padding:3px; /* NEW */
+    font-size:1.3em;/* NEW */
+    margin: 0;
+    color: #a0a0a0;
+}
+/* .secAb{
+    width:100vw;       
+} */
+.detailAb{
+    font-size:0.8em;
+    color:black;
+    background-color:white;
+    margin:0px 1px 0px 1px;
+    display:flex;
+    flex-direction:column;
+    align-items: center;  
+} 
+.detailAbName{
+    font-size:1em;
+    /* font-size:0.8em; */
+    color:white;
+    margin:2px 0px;
+    padding:5px 0px;
+    text-transform:uppercase;
+    background-color:grey;
+    border-bottom:solid white 0.5px;     
+}
+.botonAbPr{
+    margin:10px; /* NEW */
+    width:100px;
+    font-size:0.8em;
+    background-color:yellow;
+    text-align: center;
+}
+.secPerfil{
+    display:flex; /* NEW */
+    flex-direction:column;/* NEW */
+    align-items:center;/* NEW */
+    padding-top:20px;
+    padding-bottom:20px;
+}
+.secForma{
+    display:flex; /* NEW */
+    flex-direction:column;/* NEW */
+    align-items:center;/* NEW */
+    background-color:white;
+    padding:60px 0px; /* NEW */
+    /* padding-top:20px;
+    padding-bottom:20px; */
+}
+.formaSelect{ 
+    display:flex;
+    flex-direction:row; 
+    justify-content: center;
+    border-bottom:solid grey 1px;/* NEW */
+    margin:30px 4vw;/* NEW */
+}
+.formaSelect select{ /* NEW */
+    width: 150px;
+    font-size:1.1em;
+    height:30px;
+    margin:0px 0px;
+    color:black;
+    border:none;
+    /* border:solid black 1px; */
+    border-radius:0%;
+    /* border-bottom:dotted grey 1px; */
+    background-color:white;
+}
+.secFormaOption{
+    display:flex; 
+    flex-direction:row; /* NEW */
+    justify-content: center; /* NEW */
+    /* flex-direction:column; 
+    align-items: center;  */
+    width: 100vw;
+    margin: 0px 0;
+}
+.secFormaOption h2 {
+    /* font-size: 1.2em; */
+    font-size: 2em;
+    font-family: 'Lucida', serif;
+    margin: 5px; /* NEW */
+    text-transform: uppercase;
+}
+.cajaForma{
+    font-size:1em;
+}
+.infoForma{
+    /* height:450px; */
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin:0px;
+    padding:0px;
+    width:45%;
+    color:white;
+}
+.textCuerpo{
+    font-size:1.2em;/* NEW */
+    margin:0px;
+    padding:0px 15px;/* NEW */
+    height:50%;
+}
+.textCuerpo1{
+    font-size:1.2em;/* NEW */
+    margin:0px;
+    padding:0px 15px;/* NEW */
+    height:50%;
+}
+.cajaImgCuerpo{
+    max-height:550px;/* NEW */
+    text-align: center;
+    padding:0px;
+    width:50%;
+    margin:0px;
+}
+.imgCuerpo{
+    width: 100%;
+    max-height:550px;/* NEW */
+}
+
+
+/* ----------- SHOP -----------*/
+.shopTx{
+    text-transform:uppercase;
+    font-size: 1.5em;/* NEW */
+    /* font-size:1.3em; */
+    background-color:white;
+    color:red;
+    opacity: 0.9;
+    width:80vw; /* NEW */
+    /* width:100%; */
+    /* min-height: 50px; */
+    padding-left:10px;
+    padding-right: 10px;
+}
+
+}
+
+/*=================================================*/
+/*  ------------  2° MediaQuery  -------------   */
+/*=================================================*/
+@media (min-width: 940px) {
+/* --- SETEO --- */
+    .principal{
+        padding-bottom:40px;
+        padding-top:10px;
+        margin: 0 5vw;/* NEW */ 
+        max-width:90vw;/* NEW */
+        /* max-width:80vw; */
+    }
+    .filtro{
+        width:160px;
+        margin-left:20px;
+        margin-right:20px;
+        padding-left:5px;
+        padding-right:5px;
+        height:30px;      
+    }
+    .botonFilter{   
+        width:80px; 
+        height:30px;
+    }
+    .botonNuevo{
+        width:80px; 
+        height:30px;
+        margin-left:20px;
+        margin-right:20px;
+    }
+    .botonCrear{
+        width:100px; 
+        height:30px;
+        margin-left:20px;
+        margin-right:20px;
+    }
+/* --- HEADER --- */
+.nav-iconos {
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    text-transform: uppercase;
+    padding-right:10px;
+    font-size:1em;
+    /* font-size:0.9em; */
+    /* font-size:0.7em; */
+}
+
+/* ----- WELCOME ---- */
+
+.IntroText {   
+    margin:1vw 15vw;
+    /* text-align: center; */
+    /* margin: 30px 20px; */
+}
+.IntroText article h2{ /* NEW */
+    font-size: 2em;
+}
+.IntroText article p{ /* NEW */
+    font-size: 1.5em;
+    color:grey;
+}
+.lineatxt {
+    border-bottom:solid black 1px;
+    /* border-bottom:solid black 0.5px; */
+    width: 30vw;
+    /* width: 150px; */
+    margin: 0 auto;
+}
+.BannerInfo {
+    margin: 5px;
+    margin-left:20px; 
+}
+.BannerInfo h1{
+    font-size: 2em;
+}
+.secWel{
+    display:flex;
+    flex-direction:row;
+    margin:50px 0px; 
+    background-color:white;
+}
+.SeccionIntroWel {
+    display:flex; 
+    flex-direction:column; 
+    justify-content: center; 
+    width: 50%; 
+    margin: 0px 0;
+    /* margin: 30px 0; */
+    text-align: center;
+}
+.SeccionIntroWel h2 {
+    padding:15px 50px; /* NEW */
+    font-size: 2em; /* NEW */
+    /* font-size: 1.2em; */
+    /* font-size: 2em; */
+    font-family: 'Lucida', serif;
+    margin: 0;
+    text-transform: uppercase;
+}
+.SeccionIntroWel>p {
+    font-size:1.4em; /* NEW */
+    padding:15px 50px; /* NEW */
+    /* padding:10px;  */
+    margin: 0;
+    color: #a0a0a0;
+}
+.botonIng>a {
+    display: inline-block;
+    font-size:1em;
+    /* font-size:0.8em;  */
+    /* padding: 5px; */
+    padding: 10px 25px; /* NEW */
+    background-color: black;
+    color: white;
+}
+
+/* ---- BARRA MENU ----- */
+.nav-menu{
+    width: 80%;/* NEW */
+    /* width: 70%; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 10vw;/* NEW */
+    /* margin: 0 15vw; */
+    margin-bottom: 20px; /* NEW */ 
+    justify-content: center;
+    /* justify-content: space-around; */
+    /* border-top:dotted black 1px; NEW */
+    background-color:white; 
+    padding:5px;
+    /* background-color:black; */
+    /* opacity: 0.8; */
+    
+}
+.nav-menu li a{
+    padding: 0 15px;/* NEW */
+    /* margin: 0 35px; */
+    color:black; 
+    /* color:white;  */
+    /* color:grey;  */
+    font-size:1.2em;/* NEW */
+    /* font-size:1em; */
+    /* font-size:0.8em; */
+    text-transform:upperlowercase;    
+}
+.nav-menu li a:hover{
+    text-transform:uppercase;
+    color:black;
+}
+/* ------ ITEM PRODUCTO CREATE --------- */
+.formCreate{
+    display:flex;
+    flex-direction:row;
+}
+.imgInfo{
+    width:50vw;
+    height:100%;
+}
+.imgup{
+    margin-left:20vw;
+}
+/*------- HOME ITEM -------*/
+.BannerItem{
+    background-image: url("../image/bannerseisuno.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction:column;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	align-items: center;
+    color: white;
+    height: 250px; /* NEW */
+    /* height: 200px; */
+    /* height: 150px; */
+}
+.BannerItem p{
+    display:flex;
+    flex-direction:column;
+    margin: 0px 0px;
+    /* margin: 50px 0px; */
+    width:70vw;
+    /* width:80vw; */
+    /* width:100vw; */
+    min-height: 70px;
+    /* min-height: 50px; */
+    /* padding:2px; */
+    font-size: 1.6em;
+    /* font-size: 1.4em; */
+    /* font-size: 1.2em; */
+    background-color:rgba(35, 35, 35, 0.5);    
+    color:white;
+    /* background-color:yellow;    
+    color:black; */
+    text-transform: uppercase;
+    text-align: center;
+    justify-content:center;
+}
+
+/*------- LOOKS DE USUARIOS -------*/
+.BannerLooks{
+    background-image: url("../image/bannerseisuno.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+    background-position: center;
+    height: 250px; /* NEW */
+    /* height: 200px; */
+    /* height: 150px; */
+
+    display: flex;
+    flex-direction:column;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	align-items: center;
+    color: white;
+}
+.BannerLooks p{
+    display:flex;
+    flex-direction:column;
+    margin: 0px 0px;
+    width:70vw;/* NEW */
+    /* width:80vw;*/
+    /* width:100vw;
+    min-height: 70px;
+    min-height: 50px;
+    padding:2px; */
+    background-color:rgba(35, 35, 35, 0.5);
+    font-size: 1.6em;/* NEW */
+    /* font-size: 1.4em;*/
+    /* font-size: 1.1em; */
+    color:white;
+    text-transform: uppercase;
+    text-align: center;
+    justify-content:center;
+}
+/* ------- GUARDARROPA DE USUARIO ------- */
+.BannerWardrobe{
+    background-image: url("../image/bannerseisuno.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+    background-position: center;
+    height: 250px; /* NEW */
+    /* height: 200px; */
+    /* height: 150px; */
+    background-color: white;
+	display: flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+	justify-content: flex-end;
+	align-items: center;
+    color: white;
+}
+.BannerWardrobe p{
+    display:flex;
+    flex-direction:column;
+    margin: 0px 0px;
+    width:70vw;/* NEW */
+    /* width:80vw; */
+    /* width:100vw; */
+    min-height: 70px;
+    /* min-height: 50px; */
+    /* padding:2px; */
+    background-color:rgba(35, 35, 35, 0.5);
+    font-size: 1.6em;/* NEW */
+    /* font-size: 1.4em; */
+    /* font-size: 1.1em; */
+    color:white;
+    text-transform: uppercase;
+    text-align: center;
+    justify-content:center;
+}
+/* ------- PERFIL ------- */
+.BannerPerfil{
+    background-image: url("../image/banner_welcome.jpg");
+	background-repeat: no-repeat;
+    background-size: cover;
+	background-position: center;
+    height: 250px; /* NEW */
+    /* height: 200px; */
+    /* height: 150px; */
+
+	display: flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+	justify-content: flex-end;
+	align-items: center;
+    color: white; 
+}
+.BannerPerfil p{
+    margin: 0px 0px; 
+    width:70vw;
+    /* width:80vw; 
+    /* width:100vw;
+    min-height: 50px;
+    padding:2px;*/
+    background-color:rgba(255,255,255,0.8);
+    font-size: 1.6em;
+    /* font-size: 1.4em; */
+    /* font-size: 1.1em; */
+    color:red;
+    text-transform: uppercase;
+    text-align: center;
+    justify-content:center;
+}
+.SecDetailPerfil {
+    display:flex; 
+    flex-direction:column; 
+    align-items: center; 
+    width: 100vw;
+    margin: 0px 0;
+}
+.SecDetailPerfil h2 {
+    /* font-size: 1.2em; */
+    font-size: 2em;
+    font-family: 'Lucida', serif;
+    margin: 5px; 
+    text-transform: uppercase;
+}
+.SecDetailPerfil>p {
+    padding:3px; 
+    font-size:1.3em;
+    margin: 0;
+    color: #a0a0a0;
+}
+.secAb{
+    display:flex;/* NEW */
+    flex-direction:row;/* NEW */ 
+    justify-content: space-around;
+    padding: 30px 0px; /* NEW */
+    background-color: lightgrey;   /* NEW */
+    /* width: 100vw; */
+}
+.detailAb{
+    font-size:0.8em;
+    color:black;
+    background-color:white;
+    margin:0px 1px 0px 1px;
+    flex-direction:column;
+    align-items: center;  
+} 
+.detailAbName{
+    width:250px; /* NEW */
+    font-size:1em;
+    /* font-size:0.8em; */
+    color:white;
+    margin:2px 2px;
+    /* margin:2px 0px; */
+    padding:10px 10px;
+    /* padding:5px 0px; */
+    text-transform:uppercase;
+    background-color:grey;
+    border-bottom:solid white 0.5px;     
+}
+.botonAbPr{
+    margin:10px; 
+    width:100px;
+    font-size:0.8em;
+    background-color:yellow;
+    text-align: center;
+}
+.secPerfil{
+    display:flex; 
+    flex-direction:column;
+    align-items:center;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+.secForma{
+    display:flex; 
+    flex-direction:column;
+    align-items:center;
+    background-color:white;
+    padding:60px 0px; 
+    /* padding-top:20px;
+    padding-bottom:20px; */
+}
+.cajaForma{
+    width:70vw;
+}
+.formaSelect{ 
+    display:flex;
+    flex-direction:row; 
+    justify-content: center;
+    border-bottom:solid grey 1px;
+    margin:30px 4vw;
+}
+.formaSelect select{ 
+    width: 150px;
+    font-size:1.1em;
+    height:30px;
+    margin:0px 0px;
+    color:black;
+    border:none;
+    /* border:solid black 1px; */
+    border-radius:0%;
+    /* border-bottom:dotted grey 1px; */
+    background-color:white;
+}
+.secFormaOption{
+    display:flex; 
+    flex-direction:row; 
+    justify-content: center; 
+    /* flex-direction:column; 
+    align-items: center;  */
+    width: 100vw;
+    margin: 0px 0;
+}
+.secFormaOption h2 {
+    /* font-size: 1.2em; */
+    font-size: 2em;
+    font-family: 'Lucida', serif;
+    margin: 5px; 
+    text-transform: uppercase;
+}
+
+.cajaImgCuerpo{
+    width:50%;
+    margin:0px;
+    /* width: 100%; */
+    text-align: center;
+    padding:0px;
+ 
+}
+/* ----------- SHOP -----------*/
+.shopTx{
+    text-transform:uppercase;
+    font-size: 1.8em;/* NEW */
+    /*font-size: 1.5em;/* NEW */
+    /* font-size:1.3em; */
+    background-color:white;
+    color:red;
+    opacity: 0.9;
+    width:70vw;/* NEW */
+    /* width:80vw; /* NEW */
+    /* width:100%; */
+    /* min-height: 50px; */
+    padding-left:10px;
+    padding-right: 10px;
+}
+}
